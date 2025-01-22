@@ -1,3 +1,27 @@
 python-dotenv
 pandas 
 numpy
+pymongo
+certifi
+
+
+# ## -e . helps to trigger setup.py file and creates packages
+
+# In a requirements.txt file, -e . stands for editable installation of the current project (where . refers to the current directory).
+
+# Key Points:
+# Editable Mode (-e):
+
+# Installs the package in development mode.
+# Any changes made to the code are reflected immediately, without needing to reinstall the package.
+# . (Current Directory):
+
+# Refers to the current project directory containing the setup.py or pyproject.toml file.
+# Use Case:
+
+# Commonly used during development to test and debug a project without reinstalling it after every change.
+# Example Workflow:
+# With -e ., the project can be installed using:
+# pip install -r requirements.txt
+# Changes to the source code (.py files) will take effect without reinstallation.
+#-e .
