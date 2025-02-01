@@ -1,8 +1,12 @@
 python-dotenv
 pandas 
 numpy
-pymongo
 certifi
+dnspython
+pymongo
+pymongo[srv]==4.5.0
+python-dotenv
+
 
 
 # ## -e . helps to trigger setup.py file and creates packages
