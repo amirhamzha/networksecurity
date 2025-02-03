@@ -6,7 +6,7 @@ dnspython
 pymongo
 pymongo[srv]==4.5.0
 python-dotenv
-
+scikit-learn
 
 
 # ## -e . helps to trigger setup.py file and creates packages
