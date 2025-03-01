@@ -9,6 +9,10 @@ python-dotenv
 scikit-learn
 mlflow
 pyaml
+dagshub
+fastapi
+uvicorn
+python-multipart
 
 
 

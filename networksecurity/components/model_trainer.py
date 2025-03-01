@@ -25,6 +25,8 @@ from sklearn.ensemble import (
     RandomForestClassifier,
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='amirhamzha', repo_name='networksecurity', mlflow=True)
 
 
 
