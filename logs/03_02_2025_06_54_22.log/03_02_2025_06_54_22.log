@@ -1,0 +1,53 @@
+2025-03-02 06:55:41,690 INFO -1025 - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-03-02 06:55:41,737 INFO -107 - Accessing as amirhamzha
+2025-03-02 06:55:42,684 INFO -1025 - HTTP Request: GET https://dagshub.com/api/v1/repos/amirhamzha/networksecurity "HTTP/1.1 200 OK"
+2025-03-02 06:55:43,398 INFO -1025 - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-03-02 06:55:43,413 INFO -107 - Initialized MLflow to track repo "amirhamzha/networksecurity"
+2025-03-02 06:55:43,413 INFO -107 - Repository amirhamzha/networksecurity initialized!
+2025-03-02 06:55:43,413 INFO -21 - initiate the the data ingestion
+2025-03-02 06:55:47,794 INFO -69 - Performed train test split on the dataframe
+2025-03-02 06:55:47,794 INFO -71 - Exited split_data_as_train_test method of Data_Ingestion class
+2025-03-02 06:55:47,794 INFO -79 - Exporting train and test file path.
+2025-03-02 06:55:47,994 INFO -88 - Exported train and test file path.
+2025-03-02 06:55:47,994 INFO -23 - Data initiation completed
+2025-03-02 06:55:48,083 INFO -27 - initiate the data validation
+2025-03-02 06:55:48,302 INFO -41 - Required number of columns:2
+2025-03-02 06:55:48,302 INFO -42 - Data Frame has columns:Index(['having_IP_Address', 'URL_Length', 'Shortining_Service',
+       'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix',
+       'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length',
+       'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor',
+       'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL',
+       'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe',
+       'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank',
+       'Google_Index', 'Links_pointing_to_page', 'Statistical_report',
+       'Result'],
+      dtype='object')
+2025-03-02 06:55:48,310 INFO -41 - Required number of columns:2
+2025-03-02 06:55:48,311 INFO -42 - Data Frame has columns:Index(['having_IP_Address', 'URL_Length', 'Shortining_Service',
+       'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix',
+       'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length',
+       'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor',
+       'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL',
+       'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe',
+       'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank',
+       'Google_Index', 'Links_pointing_to_page', 'Statistical_report',
+       'Result'],
+      dtype='object')
+2025-03-02 06:55:48,603 INFO -29 - data validation completed
+2025-03-02 06:55:48,603 INFO -32 - data Transformation started
+2025-03-02 06:55:48,603 INFO -68 - Entered initiate_data_transformation method of DataTransformation class
+2025-03-02 06:55:48,603 INFO -70 - Starting data transformation
+2025-03-02 06:55:48,668 INFO -53 - Entered get_data_trnasformer_object method of Trnasformation class
+2025-03-02 06:55:48,672 INFO -58 - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-03-02 06:55:48,694 INFO -48 - Entered the save_object method of MainUtils class
+2025-03-02 06:55:48,718 INFO -52 - Exited the save_object method of MainUtils class
+2025-03-02 06:55:48,718 INFO -48 - Entered the save_object method of MainUtils class
+2025-03-02 06:55:48,726 INFO -52 - Exited the save_object method of MainUtils class
+2025-03-02 06:55:48,726 INFO -36 - data Transformation completed
+2025-03-02 06:55:48,726 INFO -38 - Model Training stared
+2025-03-02 07:02:28,829 INFO -48 - Entered the save_object method of MainUtils class
+2025-03-02 07:02:28,841 INFO -52 - Exited the save_object method of MainUtils class
+2025-03-02 07:02:28,843 INFO -48 - Entered the save_object method of MainUtils class
+2025-03-02 07:02:28,932 INFO -52 - Exited the save_object method of MainUtils class
+2025-03-02 07:02:28,932 INFO -131 - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\03_02_2025_06_54_35\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9911504424778761, precision_score=0.9891609795262947, recall_score=0.9931479242241031), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9741019214703425, precision_score=0.9724770642201835, recall_score=0.9757322175732217))
+2025-03-02 07:02:28,941 INFO -42 - Model Training artifact created
